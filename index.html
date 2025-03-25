@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>M Saqib Khan</title>
+    <title>Muhammad Saqib Khan</title>
     <!-- favicon-link ------->
     <link rel="shortcut icon" href="Images/favicon.jpg" type="image/x-icon">
 
@@ -17,6 +17,9 @@
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <!--AOS-library-CSS-CDN-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <!-- custom-CSS-link ----->
     <link rel="stylesheet" href="style.css">
 </head>
@@ -26,20 +29,22 @@
 
     <!-- nav-section-start ------ -->
     <nav>
-        <div class="container-fluid head">
+        <div class="container-fluid head" id="head">
 
 
-            <div class="circle">
-                <div class="logo"></div>
-                <div class="text">
-                    <h3>M Saqib Khan - Creative Designer</h3>
+            <a href="index.html">
+                <div class="circle">
+                    <div class="logo"></div>
+                    <div class="text">
+                        <h3>M Saqib Khan - Creative Designer</h3>
+                    </div>
                 </div>
-            </div>
+            </a>
 
 
             <div class="nav"> <!--nav-class-start-->
 
-                <a class="btn btn-lg talk">Let's Talk <i class="fa-solid fa-arrow-up"></i></a>
+                <a href="contact.html" class="btn btn-lg talk">Let's Talk <i class="fa-solid fa-arrow-up"></i></a>
                 <i class="fa-solid fa-bars menu" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
                     aria-controls="offcanvasRight"></i>
 
@@ -51,12 +56,16 @@
                     </div>
                     <div class="offcanvas-body">
                         <ul>
-                            <li><a href="" class="nav-link">Home <i class="fa-solid fa-arrow-up text-end"></i></a></li>
-                            <li><a href="" class="nav-link">About Me <i class="fa-solid fa-arrow-up text-end"></i></a>
+                            <li><a href="index.html" class="nav-link">Home <i
+                                        class="fa-solid fa-arrow-up text-end"></i></a></li>
+                            <li><a href="about.html" class="nav-link">About Me <i
+                                        class="fa-solid fa-arrow-up text-end"></i></a>
                             </li>
-                            <li><a href="" class="nav-link">Projects <i class="fa-solid fa-arrow-up text-end"></i></a>
+                            <li><a href="projects.html" class="nav-link">Projects <i
+                                        class="fa-solid fa-arrow-up text-end"></i></a>
                             </li>
-                            <li><a href="" class="nav-link">Contact Us <i class="fa-solid fa-arrow-up text-end"></i></a>
+                            <li><a href="contact.html" class="nav-link">Contact Us <i
+                                        class="fa-solid fa-arrow-up text-end"></i></a>
                             </li>
                         </ul>
                     </div>
@@ -68,41 +77,44 @@
 
 
 
-
-
     <!-- first-section-start ----->
     <div class="first">
         <div class="container">
             <div class="row d-flex align-items-center justify-content-between">
                 <div class="col-lg-6"><!--col-1-start-->
-                    <h2>Hello, I'm ✌</h2>
-                    <h1>M Saqib <br> Khan</h1>
-                    <h3>Web Developer | Web Designer</h3>
-                    <div class="firstSecBtns">
-                        <a class="btn btn-lg btn-dark">Let's Talk <i class="fa-solid fa-arrow-up text-end"></i></a>
-                        <a class="btn btn-lg btn-outline-dark">My Work <i class="fa-solid fa-arrow-up text-end"></i></a>
+                    <h2 data-aos="zoom-in">Hello, I'm ✌</h2>
+                    <h1 data-aos="zoom-in">M Saqib <br> Khan</h1>
+                    <h3 data-aos="zoom-in">Web Developer | Web Designer</h3>
+                    <div class="firstSecBtns" data-aos="zoom-in">
+                        <a href="contact.html" class="btn btn-lg btn-dark">Let's Talk <i
+                                class="fa-solid fa-arrow-up text-end"></i></a>
+                        <a href="projects.html" class="btn btn-lg btn-outline-dark">My Work <i
+                                class="fa-solid fa-arrow-up text-end"></i></a>
                     </div><!--first-section-btns-end-->
-                    <div class="firstSecLinks">
+                    <div class="firstSecLinks" data-aos="zoom-in">
                         <a href="https://github.com/SaqibKhan000" target="_blank"><i
                                 class="fa-brands fa-github"></i></a>
                         <a href="https://www.linkedin.com/in/m-saqib-khan-a64972338/" target="_blank"><i
                                 class="fa-brands fa-linkedin-in"></i></a>
                         <a href="https://wa.me/923345159950" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
-                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.instagram.com/muhammadsaqib6558/?igsh=MTA0MXhna3VkbGJvZA%3D%3D#"
+                            target="_blank"><i class="fa-brands fa-instagram"></i></a>
                     </div><!---first-section-links-end-->
                 </div><!--col-1-end-->
 
                 <div class="col-lg-6 d-flex align-items-center justify-content-center"><!--col-2-start-->
                     <div class="firstSecImg shadow">
-                        <img src="./Images/my-img.png" alt="">
+                        <img src="./Images/my-img.png" alt="" data-aos="zoom-in">
                     </div><!--first-section-img-end-->
 
-                    <div class="circle">
-                        <div class="logo"></div>
-                        <div class="text">
-                            <h3>Contact Me - Contact Me -</h3>
-                        </div><!--text-end-->
-                    </div><!---circle-end-->
+                    <a href="contact.html">
+                        <div class="circle">
+                            <div class="logo"></div>
+                            <div class="text">
+                                <h3>Contact Me - Contact Me -</h3>
+                            </div><!--text-end-->
+                        </div><!---circle-end-->
+                    </a>
 
                 </div><!--col-2-end-->
             </div><!--row-end-->
@@ -114,57 +126,83 @@
 
 
 
-
     <!-- second-section-start ------>
     <div class="second">
         <div class="container">
             <h4>Services</h4>
-            <!-- <h1>My Specialties</h1> -->
+            <h1>My Specialties</h1>
             <div class="row d-flex align-items-center justify-content-center">
                 <div class="col-lg-8 col-md-12 d-flex align-items-center justify-content-center">
                     <div class="row">
                         <div class="col-lg-4 col-sm-6">
-                            <div class="card">
+                            <div class="card" data-tilt data-tilt-glare data-aos="zoom-in">
                                 <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
+                                    <i class="fa-brands fa-html5 skill"></i>
+                                    <div class="speciality">
+                                        <h3>HTML</h3>
+                                        <i class="fa-solid fa-arrow-up"></i>
+                                    </div>
                                 </div>
                             </div>
                         </div><!--inner-first-col-end-->
                         <div class="col-lg-4 col-sm-6">
-                            <div class="card">
+                            <div class="card" data-tilt data-tilt-glare data-aos="zoom-in">
                                 <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
+                                    <i class="fa-brands fa-css3-alt skill"></i>
+                                    <div class="speciality">
+                                        <h3>CSS</h3>
+                                        <i class="fa-solid fa-arrow-up"></i>
+                                    </div>
                                 </div>
                             </div>
                         </div><!--inner-second-col-end-->
                         <div class="col-lg-4 col-sm-6">
-                            <div class="card">
+                            <div class="card" data-tilt data-tilt-glare data-aos="zoom-in">
                                 <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
+                                    <i class="fa-brands fa-square-js skill"></i>
+                                    <div class="speciality">
+                                        <h3>JS</h3>
+                                        <i class="fa-solid fa-arrow-up"></i>
+                                    </div>
                                 </div>
                             </div>
                         </div><!--inner-third-col-end-->
 
                         <div class="col-lg-6 col-sm-6">
-                            <div class="card">
+                            <div class="card" data-tilt data-tilt-glare data-aos="zoom-in">
                                 <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
+                                    <i class="fa-solid fa-database skill"></i>
+                                    <div class="speciality">
+                                        <h3>MySQL</h3>
+                                        <i class="fa-solid fa-arrow-up"></i>
+                                    </div>
                                 </div>
                             </div>
                         </div><!---inner-fourth-col-end-->
                         <div class="col-lg-6 col-sm-6">
-                            <div class="card">
+                            <div class="card" data-tilt data-tilt-glare data-aos="zoom-in">
                                 <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
+                                    <i class="fa-brands fa-php skill"></i>
+                                    <div class="speciality">
+                                        <h3>Basic PHP</h3>
+                                        <i class="fa-solid fa-arrow-up"></i>
+                                    </div>
                                 </div>
                             </div>
                         </div><!--inner-fifth-col-end-->
                     </div><!--inner-row-end-->
                 </div><!---outer-first-col-end-->
                 <div class="col-lg-4 col-md-12 d-flex align-items-center justify-content-center">
-                    <div class="card secondSecRightCol">
+                    <div class="card secondSecRightCol" data-tilt data-tilt-glare data-aos="zoom-in">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
+                            <i class="fa-solid fa-arrow-up text-end"></i>
+                            <div class="secondSecDetail">
+                                <h3>SAY HELLO!</h3>
+                                <h2>saqibkhannn543@ <br> gmail.com</h2>
+                            </div>
+                            <div>
+
+                            </div>
                         </div>
                     </div>
                 </div><!---outer-second-col-end-->
@@ -175,10 +213,265 @@
 
 
 
+
+
+
+
+
+    <!-- third-section-start ---------->
+    <div class="third">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 d-flex align-items-center justify-content-center">
+                    <div data-aos="zoom-in">
+                        <h3>Hello I'm</h3>
+                        <h1>M Saqib Khan, <br>Web Designer & Developer.</h1>
+                        <p>I am a passionate front-end web developer with a strong foundation in HTML, CSS, and
+                            JavaScript.
+                            I enjoy creating interactive and user-friendly websites, and I am always eager to learn new
+                            technologies to enhance my skills.
+
+                            Currently, I am expanding my knowledge in advanced JavaScript, frameworks, and backend
+                            development to become a full-stack developer. I love solving coding challenges and
+                            experimenting
+                            with new web design trends.
+
+                            Let’s build something amazing together! 🚀</p>
+                        <a href="projects.html" class="btn btn-lg">My Work <i
+                                class="fa-solid fa-arrow-up text-end"></i></a>
+                    </div>
+                </div><!---col-1-end-->
+                <div class="col-lg-6 ms-auto d-flex align-items-center justify-content-center">
+                    <div>
+                        <div class="thirdSecImg" data-aos="zoom-in">
+                            <img src="./Images/my-other-img.png" alt="">
+                        </div>
+                        <div class="thirdSecExp">
+                            <h4>2+</h4>
+                            <h5>Years of <br> experience</h5>
+                        </div>
+                    </div>
+                </div><!---col-2-end--->
+            </div><!--row-end-->
+        </div><!--container-end-->
+    </div><!----third-end-->
+    <!-- third-section-end ---------->
+
+
+
+
+
+
+
+
+    <!-- fourth-section-start ----->
+    <div class="fourth">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="fourthCol1" data-aos="zoom-in">
+                        <h3>Resume</h3>
+                        <h1>All over my <br> details find <br> here...</h1>
+                        <div class="tabsList">
+                            <button class="tab btn btn-lg active">About Me <i
+                                    class="fa-solid fa-arrow-up text-end"></i></button>
+                            <button class="tab btn btn-lg">Education <i
+                                    class="fa-solid fa-arrow-up text-end"></i></button>
+                            <button class="tab btn btn-lg">Skills <i class="fa-solid fa-arrow-up text-end"></i></button>
+                        </div><!--tabsList-end-->
+                    </div><!--fourthCol1-->
+                </div><!--col-1-end-->
+                <div class="col-lg-6">
+                    <div class="contentBox">
+                        <div class="content active fourthSecabout" data-aos="zoom-in">
+                            <h1>About Me</h1>
+                            <p>I am a passionate front-end web developer with a strong foundation in HTML, CSS, and
+                                JavaScript. I enjoy creating interactive and user-friendly websites, and I am always
+                                eager to learn new technologies to enhance my skills. Currently, I am expanding my
+                                knowledge in advanced JavaScript, frameworks, and backend development to become a
+                                full-stack developer. I love solving coding challenges and experimenting with new web
+                                design trends. Let’s build something amazing together! 🚀</p>
+                            <div class="fourthSecDetail">
+                                <div class="intro">
+                                    <span>Name :</span>
+                                    <span>Muhammad Saqib Khan</span>
+                                </div>
+                                <div class="intro">
+                                    <span>Phone :</span>
+                                    <span>(+92) 335-6554537</span>
+                                </div>
+                                <div class="intro">
+                                    <span>Email :</span>
+                                    <span>saqibkhannn543@gmail.com</span>
+                                </div>
+                                <div class="intro">
+                                    <span>Experience :</span>
+                                    <span>2+</span>
+                                </div>
+                            </div>
+                            <span class="position-absolute end-0 me-5 shine"
+                                style="font-size: 40px; margin-top: -30px">✨</span>
+                        </div><!--content-1-end-->
+                        <div class="content fourthSecEducation" data-aos="zoom-in">
+                            <h1>Education</h1>
+                            <h2>Intermediate in Computer Science (ICS) | 1<sup>st</sup> Year
+                            </h2>
+                            <h3>Superior Group of Colleges, Peshawar
+                            </h3>
+                            <p>Currently pursuing my Intermediate in Computer Science, where I am building a strong
+                                foundation in programming, algorithms, and problem-solving. Passionate about web
+                                development, I have already gained proficiency in HTML, CSS, and JavaScript and am
+                                continuously expanding my skills by working on projects and exploring advanced concepts
+                                in frontend and backend development.</p>
+                            <span class="position-absolute end-0 me-5 shine"
+                                style="font-size: 40px; margin-top: -10px">✨</span>
+                        </div><!--content-2-end-->
+                        <div class="content fourthSecSkills" data-aos="zoom-in">
+                            <h1>Skills</h1>
+                            <div class="row fourthSecLanguages">
+
+                                <div class="col-sm-3 text-center" data-tilt><i class="fa-brands fa-html5"></i>
+                                    <span>HTML</span>
+                                    <p>(99%)</p>
+                                </div>
+                                <div class="col-sm-3 text-center" data-tilt><i class="fa-brands fa-css3-alt"></i>
+                                    <span>CSS</span>
+                                    <p>(95%)</p>
+                                </div>
+                                <div class="col-sm-3 text-center" data-tilt><i class="fa-brands fa-square-js"></i>
+                                    <span>JS</span>
+                                    <p>(80%)</p>
+                                </div>
+                                <div class="col-sm-3 text-center" data-tilt><i class="fa-solid fa-database"></i>
+                                    <span>MySQL</span>
+                                    <p>(80%)</p>
+                                </div>
+                                <div class="col-sm-3 text-center" data-tilt><i class="fa-brands fa-php"></i> <span>Basic
+                                        PHP</span>
+                                    <p>(75%)</p>
+                                </div>
+                            </div><!--inner-row-end-->
+                            <span class="position-absolute end-0 me-5 shine"
+                                style="font-size: 40px; margin-top: -30px">✨</span>
+                        </div><!--content-3-end-->
+                    </div><!--contentBox-end-->
+                </div><!--col-2-end-->
+            </div><!--row-end-->
+        </div><!---container-end-->
+    </div><!---fourth-end-->
+    <!-- fourth-section-end ----->
+
+
+
+
+
+
+
+    <!-- fifth-section-start ------>
+    <div class="fifth">
+        <div class="container">
+            <p class="text-center" data-aos="zoom-in">Portfolio</p>
+            <h1 class="text-center" data-aos="zoom-in">My recent work
+            </h1>
+            <div class="row">
+                <div class="col-md-6 d-flex align-items-center justify-content-center">
+                    <a href="">
+                        <div class="main" data-aos="zoom-in"><img src="./Images/E-commerce.png"
+                                alt="E-commerce website"> <a href="https://e-commerce-neon-iota.vercel.app/">
+                                <div class="over">
+                                    <a href="https://e-commerce-neon-iota.vercel.app/" target="_blank"
+                                        class="btn btn-md"><i class="fas fa-eye"></i> Live Preview</a>
+                                </div>
+                            </a></div>
+                    </a>
+                </div><!--col-1-end-->
+                <div class="col-md-6 d-flex align-items-center justify-content-center">
+                    <a href="">
+                        <div class="main" data-aos="zoom-in"><img src="./Images/Food panda.png"
+                                alt="Food panda website"> <a href="https://food-panda-xi.vercel.app/">
+                                <div class="over">
+                                    <a href="https://food-panda-xi.vercel.app/" target="_blank" class="btn btn-md"><i
+                                            class="fas fa-eye"></i> Live Preview</a>
+                                </div>
+                            </a></div>
+                    </a>
+                </div><!--col-2-end-->
+
+                <a href="projects.html" class="btn btn-lg bigBtn mx-auto" data-aos="zoom-in">View All Projects <i
+                        class="fa-solid fa-arrow-up"></i></a><!--big-button-->
+            </div><!---row-end--->
+        </div><!---container-end--->
+    </div>
+    <!-- fifth-section-end ------>
+
+
+
+
+
+
+    <!-- sixth-section-start ---->
+    <div class="sixth">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-lg-4 d-flex align-items-center justify-content-center">
+                    <div class="sixthSecFirstCol" data-aos="zoom-in">
+                        <h1 id="wordHeading">Let’s work <br> together</h1>
+                        <a href="https://github.com/SaqibKhan000" target="_blank"><i
+                                class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/m-saqib-khan-a64972338/" target="_blank"><i
+                                class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://wa.me/923345159950" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="https://www.instagram.com/muhammadsaqib6558/?igsh=MTA0MXhna3VkbGJvZA%3D%3D#"
+                            target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div><!--col-1-end-->
+                <div class="col-md-6 col-lg-4 d-flex align-items-center justify-content-center">
+                    <div class="sixthSecotherCols" data-aos="zoom-in">
+                        <h3>Looking for a hectic designer?</h3>
+                        <div class="sixthSecDetail">
+                            <h2>saqibkhannn543@gmail.com</h2>
+                            <i class="fa-solid fa-arrow-up"></i>
+                        </div>
+                    </div>
+                </div><!--col-2-end-->
+                <div class="col-md-6 col-lg-4 d-flex align-items-center justify-content-center">
+                    <div class="sixthSecotherCols" data-aos="zoom-in">
+                        <h3>If you want to contact me...</h3>
+                        <div class="sixthSecDetail">
+                            <h2>+92-335-6554537</h2>
+                            <i class="fa-solid fa-arrow-up"></i>
+                        </div>
+                    </div>
+                </div><!--col-3-end-->
+                <h1 id="sixthSecLargeH1" data-aos="zoom-in">M SAQIB KHAN</h1>
+                <hr>
+                <footer>
+                    <p>&copy; 2025 M Saqib Khan, All Rights Reserved</p>
+                    <a href="#head">Back To Top <i class="fa-solid fa-arrow-up"></i></a>
+                </footer>
+            </div><!--row-end-->
+        </div><!--container-end--->
+    </div>
+    <!-- sixth-section-end ---->
+
+
+
+
     <!-- bootstrap-JS-CDN ------->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+
+    <!-- vanilla-tilt.JS-link ----->
+    <script src="vanilla-tilt.js"></script>
+
+    <!--AOS-library-JS-cdn-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!--AOS-Initialization-CDN-->
+    <script>
+        AOS.init();
+    </script>
 
     <!-- JS-link ------>
     <script src="script.js"></script>
